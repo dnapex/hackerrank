@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int asc(const void *a, const void * b)
+int asc(const void * a, const void * b)
 {
     return (*(int*)a - *(int*)b);
 }
 
-int dec(const void *a, const void * b)
+int dec(const void * a, const void * b)
 {
-    return (*(int*)b - *(int*)a);
+    return (*(int *)b - *(int *)a);
 }
 
 int main(int argc, char const* argv[])
