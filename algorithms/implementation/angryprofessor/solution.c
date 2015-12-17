@@ -15,6 +15,7 @@ int main(int argc, char const* argv[])
         for (int j = 0; j < n; j++) {
             int a;
             scanf("%d", &a);
+
             if (a <= 0)
                 present++;
         }
