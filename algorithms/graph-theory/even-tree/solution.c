@@ -80,9 +80,8 @@ int splitTree(struct Graph * tree, int root, int memoize[])
 
     memoize[root] = treeSize(tree, root, memoize);
 
-    if (memoize[root] % 2 == 0) {
+    if (memoize[root] % 2 == 0)
         forest++;
-    }
 
     return forest;
 }
@@ -101,9 +100,7 @@ int main(int argc, char const* argv[])
         addEdge(tree, u-1, v-1);
     }
 
-    int forest = splitTree(tree, 0, malloc(sizeof(int)*n));
-
-    printf("%d\n", forest-1);
+    printf("%d\n", splitTree(tree, 0, malloc(sizeof(int)*n))-1);
 
     return 0;
 }
