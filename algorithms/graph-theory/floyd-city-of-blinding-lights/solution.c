@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define INF 100000000
-
 int main(int argc, char const* argv[])
 {
     int n, m;
     scanf("%d %d", &n, &m);
+
+    int const INF = n*350 + 1;
 
     int ** dist = malloc(n*sizeof(int *));
     for (int i = 0; i < n; i++)
